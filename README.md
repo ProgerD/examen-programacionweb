@@ -33,7 +33,7 @@ La aplicación permite acceder a dos ejercicios:
     Contraseña: `user`
   
   Dependiendo de los datos ingresados, el sistema muestra un mensaje de bienvenida o un mensaje de error.
-- 
+
 - **Repositorio:** página breve con link directo al repositorio del proyecto.
 
 ## Estructura del proyecto
