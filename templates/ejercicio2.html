@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+
+        <h1>Ejercicio 2</h1>
+
+        <p class="instruccion">
+            Ingresa un usuario y contraseña para iniciar sesión.
+        </p>
+
+        <form method="POST">
+
+            <label>Usuario:</label>
+            <input type="text" name="usuario" required>
+
+            <label>Contraseña:</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Ingresar</button>
+
+        </form>
+
+        {% if mensaje is not none %}
+        <div class="resultado">
+
+            <p><strong>{{ mensaje }}</strong></p>
+
+        </div>
+        {% endif %}
+
+        <a href="{{ url_for('inicio') }}" class="volver">
+            Volver al inicio
+        </a>
+
+    </div>
+</body>
+</html>
